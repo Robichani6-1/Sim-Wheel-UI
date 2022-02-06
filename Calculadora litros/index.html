@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Litros</title>
+	<link rel="stylesheet" href="css.css">​
+	<link  rel="icon" href="../LOGO.png" type="image/png"/>
+	<meta property="og:image" content="../LOGO.png">
+	<meta name="description" content="Calculadora de litros para las comepeticiones de Sim Wheel"/>  
+	</style>
+</head>
+	<body>
+		<header><!--Creo header IMPORTANTE, es semantico-->
+				 <h1>Sim Wheel UI</h1>
+			  <div class="Banner">
+				<a href="../">
+                    <img alt="Logo de Sim Wheel" src="../LOGO.png"
+                   width="150" height="70">
+			  </div><!--Se usa para imagenes-->
+			  	<nav>
+				<ul>
+					 <li><a target="_blank"a href="https://discord.gg/hhqh6BGyGB">Discord</a></li>
+					 <li><a target="_blank"a href="../Calendarios/Calendario GT3.jpg">Calendario GT3</a></li>
+					 <li><a target="_blank"a href="http://es2.assettohosting.com:10414/live-timing">Tiempos</a></li>
+					 <li><a target="_blank"a href="../Calendarios/Calendario Rally.jpg">Calendario Rally</a></li>
+					 <li><a target="_blank"a href="../Guía Setups.pdf">Guía Setups</a></li>
+			  </ul>
+		   </nav>    
+		   <nav>
+			<ul>
+			  <li><a target="_blank"a href="https://docs.google.com/forms/d/e/1FAIpQLSfhEd21UWDZjN2NUqtj1ZB88guqzR339fQIteDMW_0T-hraag/viewform">Inscripción GT3</a></li>
+			  <li><a href="../index.html">Volver al menú principal</a></li>
+			  <li><a target="_blank"a href="https://www.paypal.com/paypalme/byseillas">Inscripción Rally</a></li>
+	   </ul>
+		 </nav>  
+		<div class="container">
+			<h2 style="color: rgb(45, 78, 224)">Calculadora de litros</h2>
+					<div class="content">
+						<div class="block">
+							<label style="color: #151515;margin-bottom: 10px;">Minutos de carrera: </label>
+					    	<input type="text" id="totalMin" value="" size="2">
+						</div>
+						<div class="block">
+							<label style="color: #151515;margin-bottom: 10px;">Laptime ( min  , sec ): </label>	
+					    	<input type="text" id="lapMin" value="" size="1">	
+					    	<input type="text" id="lapSec" value="" size="2">
+					    					    	
+						</div>
+						<div class="block">
+							<label style="color: #151515;margin-bottom: 10px;">Litros por vuelta: </label>
+					    	<input type="text" id="litrosPorVuelta" value="" size="5">			
+						</div>
+						
+						<button onclick="calcular()">Calcular</button>
+						<button onclick="clears()">Borrar</button>
+						<h2 id="res" style="text-align:center;color: #151515;"></h2>
+						<h2 id="res2" style="text-align:center;color: #151515;"></h2>
+				</div>
+		</div>
+		</header>
+	</body>
+	<script src="js.js"></script>
+</html>
