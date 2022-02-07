@@ -34,29 +34,30 @@
 	   </ul>
 		 </nav>  
 		<div class="container">
-			<h2 style="color: rgb(45, 78, 224)">Calculadora de litros</h2>
+			<h2 style="color: rgb(45, 78, 224)">LITROS CALCULATOR</h2>
 					<div class="content">
+						
 						<div class="block">
-							<label style="color: #151515;margin-bottom: 10px;">Minutos de carrera: </label>
-					    	<input type="text" id="totalMin" value="" size="2">
+							<input type="checkbox" id="checkbox">
+							<label style="color: #151515;margin-bottom: 10px;" id="minutos_vueltas_texto">Minutos de carrera: </label>
+					    	<input type="text" id="min_vueltas" value="" size="2">
 						</div>
 						<div class="block">
-							<label style="color: #151515;margin-bottom: 10px;">Laptime ( min  , sec ): </label>	
+							<label style="color: #151515;margin-bottom: 10px;">Laptime(min, sec): </label>	
 					    	<input type="text" id="lapMin" value="" size="1">	
 					    	<input type="text" id="lapSec" value="" size="2">
 					    					    	
 						</div>
 						<div class="block">
-							<label style="color: #151515;margin-bottom: 10px;">Litros por vuelta: </label>
+							<label style="color: #151515;margin-bottom: 10px;">Litros/vuelta: </label>
 					    	<input type="text" id="litrosPorVuelta" value="" size="5">			
 						</div>
-						
+						<br>
 						<button onclick="calcular()">Calcular</button>
 						<button onclick="clears()">Borrar</button>
 						<h2 id="res" style="text-align:center;color: #151515;"></h2>
 						<h2 id="res2" style="text-align:center;color: #151515;"></h2>
 				</div>
-		</div>
 		</header>
 	</body>
 	<script src="js.js"></script>
